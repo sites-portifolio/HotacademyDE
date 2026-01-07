@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Academy | Premium Collections</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+  <meta name="monetag" content="4163423d04cd2de50ab4f7b90ac8fee1">
+   <script src="https://quge5.com/88/tag.min.js" data-zone="198172" async data-cfasync="false"></script>
+    <script>(function(s){s.dataset.zone='10418538',s.src='https://gizokraijaw.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+    <style>
+        :root {
+            --primary: #f43f5e;
+            --primary-hover: #e11d48;
+            --bg-dark: #09090b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: #fafafa;
+            scroll-behavior: smooth;
+        }
+
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #f43f5e, #fb7185, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glow-red {
+            box-shadow: 0 0 25px rgba(244, 63, 94, 0.2);
+        }
+
+        .pack-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .pack-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(244, 63, 94, 0.15);
+            border-color: rgba(244, 63, 94, 0.4);
+        }
+
+        .video-container {
+            position: relative;
+            border: 2px solid #27272a;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-container::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.7);
+        }
+
+        @keyframes pulse-custom {
+            0% {
+                box-shadow: 0 0 0 0 rgba(34, 158, 217, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(34, 158, 217, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(34, 158, 217, 0);
+            }
+        }
+
+        .pulse-telegram {
+            animation: pulse-custom 2s infinite;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #09090b;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #27272a;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f43f5e;
+        }
+    </style>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="module">
+        import React from 'https://esm.sh/react@19.0.0';
+        import ReactDOM from 'https://esm.sh/react-dom@19.0.0/client';
+        import htm from 'https://esm.sh/htm';
+
+        const html = htm.bind(React.createElement);
+
+        const TELEGRAM_LINK = "https://t.me/Blake_Seller24";
+
+        const PACKS = [
+            {
+                id: 'CP1',
+                name: '🥵Silver Pack CP1😋',
+                description: 'The gateway to the Hot Academy world. A premium selection of trending videos.',
+                price: 'get access now',
+                originalPrice: '€75.00',
+                iframeUrl: 'https://mega.nz/embed/KpomHRaA#EQb5aAAazrgzD24Zr2oE8Rf6-kvcjEXMX4M17tbg1nE',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/fZu4gA2iq8p8dzR2rv3840f',
+                benefits: ['✅ MORE THAN 400 VIDEOS','✅ 5GB IN TOTAL','✅ MY COMPLETE FOLDER'],
+                tag: 'MOST AFFORDABLE'
+            },
+            {
+                id: 'AT',
+                name: '🤫ALL teens😈',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€85.00',
+                iframeUrl: 'https://mega.nz/embed/yx5VwaDS#hnridvUQAobOesr-CPoaDCYGZQBEr4y5tmbKO9Z3n9U',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/6oU7sM4qyaxg0N52rv3840l',
+                benefits: ['✅ MORE THAN 320 VIDEOS','✅ 10GB IN TOTAL','✅ MY COMPLETE FOLDER'],
+                tag: '🔥😘🥵'
+            },
+            {
+                id: 'CP2',
+                name: '🧐Gold Pack CP2🥵',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€85.00',
+                iframeUrl: 'https://mega.nz/embed/vs5Gia6D#f4FATmE-tSBkc87BqEaW0uUet2qyUzwtv_d5GN7qcSk',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/dRm14of5cfRA8fx8PT38404',
+                benefits: ['✅ MORE THAN 400 VIDEOS','✅6GB IN TOTAL','✅ MY COMPLETE FOLDER'],
+                tag: 'BEST SELLER'
+            },
+            {
+                id: 'LZ',
+                name: '🔥Lizzy🤤😋',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€69.00',
+                iframeUrl: 'https://mega.nz/embed/uwpAjKQD#iHnA2qN48Y8_n_p5EeLIFLUtbAxVeZ0ad9EfIxUra74',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/14A28sbT07l4dzR0jn38400',
+                benefits: ['✅BLACKMAIL VIDEOS🥵','✅TRAINING VIDEOS🔥','🥵20.22GB Folder on MEGA','🥵3486 FILES','🥵9 SUBFOLDERS'],
+                tag: '🥵😍🔥'
+            },
+            {
+                id: 'CP3',
+                name: '😍👏Diamond Pack CP3🔥',
+                description: 'The definitive experience. Unlock the entire 2025 archive instantly.',
+                price: 'get access now',
+                originalPrice: '€75.00',
+               iframeUrl: 'https://mega.nz/embed/2tZAUL6I#yqPEQW6X9l_e-I7ku1ZA4j6BrR6fA0mkebnJm2Q1sdw',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/dRm14of5cfRA8fx8PT38404',
+                benefits: ['✅ MORE THAN 150 VIDEOS','✅ 3GB IN TOTAL','✅ MY COMPLETE FOLDER'],
+                tag: 'ULTRA PREMIUM'
+            },
+            {
+                id: 'CC',
+                name: '🤤CP collection🤫😈',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€300.00',
+                iframeUrl: 'https://mega.nz/embed/r4Ax3TBb#-xunDt8FW2X4t3fXSKlAQ9Ov6JvOOTRVJptWuG26Lxw',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/14AcN6aOW7l48fxfeh3840j',
+                benefits: ['✅ MORE THAN 800 VIDEOS','✅ 15GB IN TOTAL','✅ MY COMPLETE FOLDER'],
+                tag: '🤤🤫😈'
+            },
+            {
+                id: 'CP4',
+                name: '🥵🥵Platinum Pack CP4😈',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€85.00',
+                iframeUrl: 'https://mega.nz/embed/D5gVELIR#32lkCmqDYBWnkbcSKqiuDeqGGvRfR1q9MDFeLa4SB3w',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/cNi8wQ8GOaxg9jBd693840g',
+                benefits: ['✅ MORE THAN 100 VIDEOS','✅ 2GB IN TOTAL','✅ MY COMPLETE FOLDER'],
+                tag: 'BEST SELLER'
+            },
+            {
+                id: 'MX',
+                name: '💖🥵MIX CP🔥',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '$100.00',
+                iframeUrl: 'https://mega.nz/embed/f8JA0CDC#0fQCJhy09gupXdA0Aub1a6J3kWO76bNyzEm_nj3IBaA',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/3cI14ocX4gVE67pfeh38409',
+                benefits: ['✅ MORE THAN 200 VIDEOS','✅8GB IN TOTAL','✅ MY COMPLETE FOLDER'],
+                tag: '❤🥵😈'
+            },
+            {
+                id: 'DG',
+                name: '💕🙌Desiree Garcia🥵',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€60.00',
+                iframeUrl: 'https://mega.nz/embed/6gxhmDiQ#RHwfEPK41BXVlFs3F3JOQqpTNT9F_kCjKxxUKE9Csus',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/5kQ3cw6yG20K0N53vz3840e',
+                benefits: ['✅ SANO LEAK','✅ COMPLETE FOLDER🔥','✅PREMIUM CONTENT'],
+                tag: '💕🙌🥵'
+            },
+            {
+                id: 'IK',
+                name: '😘Ivank😈',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€60.00',
+                iframeUrl: 'https://mega.nz/embed/2l43iBpD#nNgqdLDlHeoJy252gTA_am0Gr8_djyfakIL_ExonlX4',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/cNibJ27CKcFogM3aY13840d',
+                benefits: ['✅10.22GB folder on MEGA 64 files','✅14-YEAR-OLD GIRL ABUSING HER YOUNGER BROTHER','✅INCEST🥵','🥵SOLO STUFF'],
+                tag: '🤫😘😈'
+            },
+            {
+                id: 'CG',
+                name: '🙌👌CP GAY😈😈',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€90.00',
+                iframeUrl: 'https://mega.nz/embed/mshhXYpA#wZRkHIVtar8nYBa_rYvCx6NnDJ-xmy1I496HcLjuidE',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/fZu4gA2iq8p8dzR2rv3840f',
+                benefits: ['✅ MORE THAN 100 VIDEOS','✅ 5GB IN TOTAL','✅ COMPLETE FOLDER'],
+                tag: '🙌👌😈'
+            },
+            {
+                id: 'FR',
+                name: '❤👏Father AND DAUGHTER🔥',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€60.00',
+                iframeUrl: 'https://mega.nz/embed/39h1xTSC#n7DfY-9dE1dtcwn4bgGHn3-Oq_JIzBXZuOwpAR0p5X8',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/5kQfZi8GO20K2Vdead3840b',
+                benefits: ['✅THIS FOLDER GOES CRAZY 😈💯','✅DAD – DAUGHTER'],
+                tag: '❤👏🌹'
+            },
+            {
+                id: 'RC',
+                name: '😜🌹RAPE CP😈',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€60.00',
+                iframeUrl: 'https://mega.nz/embed/3kR03LyQ#XgYShx6ARpwAkcP2-hQ197PQVFoi9jQ3lFl47pULFig',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/3cI9AUe185cWcvNgil38408',
+                benefits: ['✅ MORE THAN 350 VIDEOS','✅ 8GB IN TOTAL','✅ MY COMPLETE FOLDER','✅PREMIUM CONTENT'],
+                tag: '😜🌹🥵'
+            },
+            {
+                id: 'BC',
+                name: '🥵😍Black CP🔥',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€70.00',
+                iframeUrlBC: 'https://mega.nz/embed/uhZnwDIZ#QiI5SFUlcTTxUWY9svUUk0V30qHdEQswIsnQgYXQD5Y',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/dRm14o1em20K67p1nr38402',
+                benefits: ['✅ MORE THAN 100 VIDEOS','✅ 9GB IN TOTAL','✅ MY COMPLETE FOLDER'],
+                tag: '🥵😋😍'
+            },
+            {
+                id: 'MS',
+                name: '😘🥵Mom & son🔥',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€70.00',
+               iframeUrl: 'https://mega.nz/embed/KwRyEK4Z#8m8lSwS4mQL0W21sTKTtXMiDdkBYVtAHVthsCv-JjcU',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/3cI14o9KS6h0cvN2rv3840a',
+                benefits: ['✅THIS FOLDER GOES CRAZY 😈💯','✅MOM – SON','✅MOM – DAUGTH3ER '],
+                tag: '😘❤🥵'
+            },
+            {
+                id: 'C25',
+                name: '😋CP 2025❤😍',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€70.00',
+                iframeUrl: 'https://mega.nz/embed/mt4SUa5S#jLn7WUWT4Wgpkphe8k7sU3IyYKLNvHOrQdRyUtkI8_0',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/cNi8wQ8GOaxg9jBd693840g',
+                benefits: ['✅ MORE THAN 500 VIDEOS','✅ 18GB IN TOTAL','✅ MY COMPLETE FOLDER'],
+                tag: '😋❤😍'
+            },
+             {
+                id: 'PC',
+                name: '💕😘Pool CP🔥',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€70.00',
+                iframeUrl: 'https://mega.nz/embed/StphVJLb#8cxxctOi_q7WM3Y1goREtcLNmAjtJ3LURdJmX3OWRGc',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/00w5kE7CK7l49jB3vz3840k',
+                benefits: ['✅ MORE THAN 50 VIDEOS','✅ 2GB IN TOTAL','✅ COMPLETE FOLDER'],
+                tag: '❤😘💕'
+            },
+             {
+                id: 'ET',
+                name: '❤English teens🥵😍',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€70.00',
+                iframeUrl: 'https://mega.nz/embed/uxoBlYKC#Eqz_-CBNwzNT0MolbMq3r5qC2nux1lED7R0MJFhCtHU',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/14A6oIe188p87bt7LP3840c',
+                benefits: ['✅ OVER 500 VIDEOS','✅ 5.19GB IN TOTAL','✅ MORE THAN 200 BLACKMAIL VIDEOS','✅Incest','✅ MY COMPLETE FOLDER'],
+                tag: '❤🥵😍'
+            },
+             {
+                id: 'HS',
+                name: '🔥High school👏💖',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€70.00',
+                iframeUrl: 'https://mega.nz/embed/exgFSQSR#xXzQ9VhieO2-sPMNBGmMuFqHDRqRP0WWXWKPb2rCxW8',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/cNi8wQ8GOaxg9jBd693840g',
+                benefits: ['✅MORE THAN 300 Videos','✅6GB IN TOTAL','✅TEENS'],
+                tag: '👏❤🌹'
+            },
+            {
+                id: 'SF',
+                name: '😍😋Snapgod full🥵',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€70.00',
+                iframeUrl: 'https://mega.nz/embed/6w4h1KQL#8AUPyfQf9WrGaRYXT_AK5YPxafqqVZObml5kupQK9_0',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/cNi8wQ8GOaxg9jBd693840g',
+                benefits: ['➡️500GB IN TOTAL','➡️MORE THAN 200 BLACKMAIL VIDEOS','➡️LEAKED SNAP OF REAL GIRLS','➡️MY COMPLETE FOLDER','✅PREMIUM CONTENT','⚠️Full edition'],
+                tag: '😍😋🥵'
+            },
+            {
+                id: 'TL',
+                name: '🥵Teens Leaks😈',
+                description: 'The perfect balance. Extended content with exclusive and unreleased scenes.',
+                price: 'get access now',
+                originalPrice: '€120.00',
+                iframeUrl: 'https://mega.nz/embed/HpoUHRqJ#Ehg4K3Kdv7v6znHtJrr07Zf-lb69NnBDD0TnO5t0wUA',
+                checkoutUrl: 'https://shrinkme.io/st?api=e38ee49dc7c7457e37d6f2956fb4756277e4e4d5&url=https://buy.stripe.com/14A4gA4qy8p8fHZc253840p',
+                benefits: ['✅5GB IN TOTAL','✅MORE THAN 180 VIDEOS','✅MY COMPLETE FOLDER'],
+                tag: '🥵❤😈'
+            }
+        ];
+
+        const Header = () => html`
+            <header className="fixed top-0 left-0 w-full z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
+                <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 bg-rose-600 rounded-xl flex items-center justify-center font-bold text-white shadow-lg shadow-rose-600/20">H</div>
+                        <span className="text-2xl font-black tracking-tighter font-poppins text-white uppercase italic">
+                            Hot<span className="text-rose-600">Academy</span>
+                        </span>
+                    </div>
+                    <div className="hidden md:flex gap-8 text-xs font-bold tracking-widest text-zinc-400">
+                        <a href="#packs" className="hover:text-rose-500 transition-colors uppercase">Packs</a>
+                        <a href="#benefits" className="hover:text-rose-500 transition-colors uppercase">Benefits</a>
+                        <a href="#support" className="hover:text-rose-500 transition-colors uppercase">Support</a>
+                    </div>
+                    <div className="px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full text-[10px] font-black text-rose-500 uppercase">
+                        18+ ONLY
+                    </div>
+                </div>
+            </header>
+        `;
+
+        const Hero = () => html`
+            
+        `;
+
+        const PackCard = ({ pack }) => html`
+            <div className="pack-card bg-zinc-900/40 border border-zinc-800/60 rounded-[2.5rem] overflow-hidden flex flex-col h-full">
+                <div className="p-4">
+                    <div className="video-container group relative w-full aspect-video overflow-hidden rounded-2xl bg-black">
+                        <iframe
+                        src=${pack.iframeUrl}
+                        className="w-full h-full opacity-90 group-hover:opacity-100 transition-opacity"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        ></iframe>
+
+                        ${pack.tag && html`
+                        <div className="absolute top-4 left-4 bg-rose-600 text-[10px] font-black px-3 py-1 rounded-full text-white shadow-xl uppercase tracking-tighter z-10">
+                             ${pack.tag}
+                        </div>
+                    `}
+                </div>
+            </div>
+                
+                <div className="p-8 pt-4 flex-grow flex flex-col">
+                    <div className="flex justify-between items-center mb-4">
+                        <h3 className="text-2xl font-black font-poppins text-white uppercase italic tracking-tighter">${pack.name}</h3>
+                        <span className="text-rose-500 font-black text-sm">${pack.id}</span>
+                    </div>
+                    
+                    <p className="text-zinc-500 text-sm mb-8 leading-relaxed font-medium">
+                        ${pack.description}
+                    </p>
+                    
+                    <div className="space-y-4 mb-10">
+                        ${pack.benefits.map(benefit => html`
+                            <div key=${benefit} className="flex items-center gap-3 text-sm text-zinc-300 font-semibold">
+                                <div className="w-5 h-5 rounded-full bg-rose-600/20 flex items-center justify-center">
+                                    <svg className="w-3 h-3 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                ${benefit}
+                            </div>
+                        `)}
+                    </div>
+                    
+                    <div className="mt-auto">
+                        <div className="flex flex-col mb-6">
+                            <span className="text-zinc-600 line-through text-xs font-bold uppercase mb-1">WAS: ${pack.originalPrice}</span>
+                            <div className="flex items-baseline gap-2">
+                                <span className="text-zinc-400 text-sm font-bold uppercase">ONLY:</span>
+                                <span className="text-4xl font-black text-white tracking-tighter">${pack.price}</span>
+                            </div>
+                        </div>
+                        
+                        <a 
+                            href=${pack.checkoutUrl}
+                            className="block w-full py-5 bg-white hover:bg-rose-600 hover:text-white text-zinc-950 font-black text-center rounded-2xl transition-all active:scale-95 shadow-xl uppercase tracking-wider text-sm"
+                        >
+                            Click here
+                        </a>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        const BenefitSection = () => html`
+            <section id="benefits" className="py-24 bg-zinc-950">
+                <div className="container mx-auto px-4">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+                        <div className="text-center group">
+                            <div className="w-20 h-20 bg-rose-600/10 text-rose-500 rounded-3xl flex items-center justify-center mb-8 mx-auto border border-rose-500/20 group-hover:bg-rose-600 group-hover:text-white transition-all duration-500">
+                                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-2xl font-black mb-4 font-poppins uppercase tracking-tight italic">Quality</h3>
+                            <p className="text-zinc-500 font-medium">High-level pkroductions with ultra-sharp resolution for all devices.</p>
+                        </div>
+                        <div className="text-center group">
+                            <div className="w-20 h-20 bg-rose-600/10 text-rose-500 rounded-3xl flex items-center justify-center mb-8 mx-auto border border-rose-500/20 group-hover:bg-rose-600 group-hover:text-white transition-all duration-500">
+                                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-2xl font-black mb-4 font-poppins uppercase tracking-tight italic">Instant Access</h3>
+                            <p className="text-zinc-500 font-medium">Fast payment, instant release. Access your content in less than 1 minute via email.</p>
+                        </div>
+                        <div className="text-center group">
+                            <div className="w-20 h-20 bg-rose-600/10 text-rose-500 rounded-3xl flex items-center justify-center mb-8 mx-auto border border-rose-500/20 group-hover:bg-rose-600 group-hover:text-white transition-all duration-500">
+                                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-2xl font-black mb-4 font-poppins uppercase tracking-tight italic">Total Privacy</h3>
+                            <p className="text-zinc-500 font-medium">Discreet billing on your statement and full protection of your browsing data.</p>
+                        </div>
+                    </div>
+
+                    <div id="support" className="mt-32 p-10 md:p-16 bg-gradient-to-br from-rose-950/40 to-zinc-900/40 rounded-[3rem] border border-rose-500/20 flex flex-col md:flex-row items-center justify-between gap-10">
+                        <div className="max-w-xl text-center md:text-left">
+                            <h2 className="text-4xl md:text-5xl font-black font-poppins mb-6 leading-tight uppercase italic">Questions? Talk to <br />a Specialist.</h2>
+                            <p className="text-zinc-400 text-lg font-medium">
+                                "Our Telegram support is fast, human, and 100% anonymous. We are online now."
+                            </p>
+                             <p className="text-zinc-400 text-lg font-medium">
+                                "If you need help, contact us via Telegram."
+                            </p>
+                            <p className="text-zinc-400 text-lg font-medium">
+                                "If a link is down and you can’t access the content on Mega, send a message on Telegram."
+                            </p>
+                            <p className="text-zinc-400 text-lg font-medium">
+                                "You want to pay with paypal or cryptocurrencies send a message to support on telegram."
+                            </p>
+                        </div>
+                        <a 
+                            href=${TELEGRAM_LINK}
+                            target="_blank"
+                            className="flex items-center gap-4 px-12 py-6 bg-[#229ED9] hover:bg-[#1e8ec4] text-white font-black rounded-2xl transition-all shadow-2xl hover:scale-105 uppercase tracking-widest text-lg"
+                        >
+                            <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-.99.53-1.41.52-.46-.01-1.35-.26-2.01-.48-.81-.27-1.45-.42-1.39-.88.03-.24.36-.49.99-.75 3.88-1.69 6.46-2.8 7.76-3.35 3.68-1.54 4.45-1.81 4.95-1.82.11 0 .35.03.5.16.13.1.17.24.18.33l-.01.35z"/>
+                            </svg>
+                            VIP Telegram
+                        </a>
+                    </div>
+                </div>
+            </section>
+        `;
+
+        const FloatingButton = () => html`
+            <a 
+                href=${TELEGRAM_LINK}
+                target="_blank"
+                className="fixed bottom-8 right-8 z-[100] group flex items-center gap-4"
+            >
+                <div className="bg-white text-zinc-900 font-black px-5 py-2.5 rounded-xl opacity-0 group-hover:opacity-100 transition-all shadow-2xl pointer-events-none text-xs uppercase tracking-widest translate-x-4 group-hover:translate-x-0">
+                    Online Support
+                </div>
+                <div className="w-16 h-16 bg-[#229ED9] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-95 pulse-telegram">
+                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-.99.53-1.41.52-.46-.01-1.35-.26-2.01-.48-.81-.27-1.45-.42-1.39-.88.03-.24.36-.49.99-.75 3.88-1.69 6.46-2.8 7.76-3.35 3.68-1.54 4.45-1.81 4.95-1.82.11 0 .35.03.5.16.13.1.17.24.18.33l-.01.35z"/>
+                    </svg>
+                </div>
+            </a>
+        `;
+
+        const Footer = () => html`
+            <footer className="py-20 bg-zinc-950 border-t border-zinc-900">
+                <div className="container mx-auto px-4 text-center">
+                    <div className="mb-10 flex justify-center items-center gap-3 opacity-30 hover:opacity-100 transition-opacity">
+                        <div className="w-8 h-8 bg-zinc-600 rounded-lg flex items-center justify-center font-bold text-black text-xs">H</div>
+                        <span className="text-xl font-black tracking-tighter font-poppins text-white uppercase italic">HotAcademy</span>
+                    </div>
+                    
+                    <p className="text-zinc-600 text-[10px] uppercase tracking-[0.3em] mb-8 font-bold">
+                        © 2025 Hot Academy • Original Content • All Rights Reserved
+                    </p>
+                    
+                    <div className="max-w-2xl mx-auto border border-zinc-900/50 p-8 rounded-3xl bg-zinc-900/20 backdrop-blur-sm">
+                        <p className="text-zinc-600 text-[9px] md:text-[10px] leading-relaxed uppercase font-bold tracking-tight">
+                            LEGAL NOTICE: THIS SITE IS INTENDED EXCLUSIVELY FOR ADULTS (18+). BY ACCESSING, YOU DECLARE YOU ARE OF LEGAL AGE. 
+                            WE DO NOT TOLERATE ANY FORM OF ILLEGAL CONTENT. ALL MODELS ARE OF LEGAL AGE AND CONSENTED TO THE PRODUCTION. 
+                            UNAUTHORIZED SHARING OF THIS CONTENT WILL LEAD TO APPROPRIATE LEGAL ACTION.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        `;
+
+        const App = () => html`
+            <div className="min-h-screen selection:bg-rose-600 selection:text-white overflow-x-hidden">
+                <${Header} />
+                <main>
+                    <${Hero} />
+                    <section id="packs" className="py-24 bg-zinc-950 relative">
+                        <div className="container mx-auto px-4">
+                            <div className="text-center mb-20">
+                                <h2 className="text-4xl md:text-6xl font-black font-poppins mb-6 uppercase italic tracking-tighter">
+                                    Our <span className="text-rose-600 underline decoration-rose-600/20 underline-offset-8">Collections</span> 2025
+                                </h2>
+                                <p className="text-zinc-500 max-w-xl mx-auto font-medium text-lg leading-relaxed">
+                                    Exclusive packs prepared for those seeking the best aesthetics and visual experience.
+                                </p>
+                            </div>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                                ${PACKS.map(pack => html`<${PackCard} key=${pack.id} pack=${pack} />`)}
+                            </div>
+                        </div>
+                    </section>
+                    <${BenefitSection} />
+                </main>
+                <${Footer} />
+                <${FloatingButton} />
+            </div>
+        `;
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(html`<${App} />`);
+    </script>
+    <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
